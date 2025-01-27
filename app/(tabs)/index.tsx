@@ -28,7 +28,7 @@ async function getDb() {
   console.log('OPSQLite IOS_DOCUMENT_PATH:', IOS_DOCUMENT_PATH);
   console.log('Using location:', dbDirectory.uri);
 
-  dbInstance = await open({
+  dbInstance = open({
     name: 'inMemoryDb',
     location: ':memory:',
   });
